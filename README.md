@@ -17,4 +17,4 @@ make lint
 ```
 
 ## link to web
-[website](http://cold-parent.surge.sh/)
+[website](http://ruddy-meat.surge.sh)
