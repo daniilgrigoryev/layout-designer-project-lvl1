@@ -1,0 +1,484 @@
+:root {
+  --color-main: #42413c;
+  --color-orrange: #fe8a02;
+  --color-dark: #2a2626;
+  --color-dark-light: #908d8b;
+  --color-white: #fff;
+  --color-white-light: #d7ccc0;
+  --color-blue: #007dc1;
+  --color-gray: #b09a81;
+  --color-wolf: #f5f4f0;
+}
+
+.color-main {
+  color: var(--color-main);
+}
+
+.color-orrange {
+  color: var(--color-orrange);
+}
+
+.color-dark {
+  color: var(--color-dark);
+}
+
+.color-dark-light {
+  color: var(--color-dark-light);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-white-light {
+  color: var(--color-white-light);
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.color-gray {
+  color: var(--color-gray);
+}
+
+.color-wolf {
+  color: var(--color-wolf);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--color-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+iframe {
+  border: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+h1,
+.h1 {
+  font-size: 72px;
+}
+
+h2,
+.h2 {
+  font-size: 60px;
+}
+
+h3,
+.h3 {
+  font-size: 34px;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+}
+
+.layout-wide {
+  width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-light {
+  background-color: var(--color-wolf);
+}
+
+.bg-dark {
+  color: var(--color-white);
+  background-color: var(--color-gray);
+}
+
+.bg-main {
+  color: var(--color-white);
+  background-color: var(--color-main);
+}
+
+.bg-graphic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.06;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.5;
+}
+
+.btn-orrange {
+  color: var(--color-white);
+  background: var(--color-orrange);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-link {
+  color: var(--color-blue);
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-half {
+  width: 50%;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.block {
+  display: block;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.header-img {
+  position: absolute;
+  top: -45px;
+  right: -240px;
+  width: auto;
+  height: 525px;
+}
+
+.mt-180 {
+  margin-top: 180px;
+}
+
+.py-100 {
+  padding: 100px 0;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pt-200 {
+  padding-top: 200px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-88 {
+  margin-top: 88px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mx-15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+#section-main-nav {
+  margin-top: -100px;
+}
+
+.text-large {
+  font-size: 52px;
+}
+
+.text-middle {
+  font-size: 24px;
+}
+
+.text-base {
+  font-size: 18px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.section-main-nav {
+  counter-reset: nav-item;
+}
+
+.box-container {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+nav .box {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  width: 350px;
+  box-sizing: border-box;
+}
+
+nav .nav-item {
+  display: block;
+  padding: 24px 24px 5px 24px;
+  text-decoration: none;
+  color: var(--color-main);
+  transition: 0.2s;
+}
+
+nav .nav-item::before {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: 'Neucha', cursive;
+  line-height: 1;
+  content: counter(nav-item);
+  counter-increment: nav-item;
+}
+
+nav .nav-item:hover,
+nav .nav-item:focus {
+  color: var(--color-white);
+  background-color: var(--color-orrange);
+}
+
+nav .nav-item:active {
+  opacity: 0.5;
+}
+
+nav .nav-item-title {
+  color: var(--color-orrange);
+}
+
+nav .nav-item:hover .nav-item-title,
+nav .nav-item:focus .nav-item-title {
+  color: var(--color-white);
+}
+
+.content-center {
+  align-items: center;
+}
+
+.form-input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 15px;
+  font-size: 13px;
+  border: 1px solid #e3e3e3;
+  border-radius: 0;
+}
+
+.form-input::placeholder {
+  color: rgba(66, 65, 60, 0.2);
+}
+
+.form-input:hover::placeholder,
+.form-input:focus::placeholder {
+  color: rgba(66, 65, 60, 0.6);
+}
+
+.form-send {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  padding: 0;
+  background-color: var(--color-orrange);
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-send::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/send.svg);
+  transform: translate(-50%, -50%);
+  content: '';
+}
+
+.form-send:hover,
+.form-send:focus {
+  opacity: 0.8;
+}
+
+.form-send:active {
+  opacity: 0.5;
+}
+
+.form-policy {
+  margin: 0;
+  font-size: 12px;
+}
+
+.link {
+  transition: 0.2s;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: none;
+}
+
+.link:active {
+  opacity: 0.5;
+}
+
+.footer-wrapper {
+  padding: 40px 55px;
+}
+
+.title-description {
+  padding: 5px 10px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
