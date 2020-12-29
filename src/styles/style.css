@@ -175,6 +175,7 @@ h4,
   box-shadow: none;
   cursor: pointer;
   box-sizing: border-box;
+  height: 49px;
 }
 
 .btn:hover,
