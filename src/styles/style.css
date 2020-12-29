@@ -1,10 +1,6 @@
-/** CSS STYLE **/
-
-/* @@@ Variables START @@@ */
-
 :root {
   --color-main: #42413c;
-  --color-accent: #fe8a02;
+  --color-orrange: #fe8a02;
   --color-dark: #2a2626;
   --color-dark-lighten: #908d8b;
   --color-white: #fff;
@@ -20,10 +16,6 @@
   --offset-grid-one-side: calc(var(--offset-grid) / 2);
   --transition-time: 0.2s;
 }
-
-/* @@@ Variables END @@@ */
-
-/* @@@ Common START @@@ */
 
 body,
 html {
@@ -83,21 +75,21 @@ h4,
   font-size: 24px;
 }
 
-.grid {
+.flex {
   display: flex;
   margin: 0 calc(-1 * var(--offset-grid-one-side));
 }
 
-.grid > * {
+.flex > * {
   margin-right: var(--offset-grid-one-side);
   margin-left: var(--offset-grid-one-side);
 }
 
-.grid-item-4 {
+.flex-w-third {
   width: calc(33.33% - var(--offset-grid));
 }
 
-.grid-item-6 {
+.flex-w-half {
   width: calc(50% - var(--offset-grid));
 }
 
@@ -113,7 +105,7 @@ h4,
   text-transform: uppercase;
 }
 
-.row-reverse {
+.reverse {
   flex-direction: row-reverse;
 }
 
@@ -147,15 +139,15 @@ h4,
   background-color: var(--color-main);
 }
 
-.bg-pattern {
+.bg-graphic {
   position: relative;
 }
 
-.bg-pattern > * {
+.bg-graphic > * {
   position: relative;
 }
 
-.bg-pattern::before {
+.bg-graphic::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -180,8 +172,8 @@ h4,
   color: var(--color-main);
 }
 
-.color-accent {
-  color: var(--color-accent);
+.color-orrange {
+  color: var(--color-orrange);
 }
 
 .color-dark-lighten {
@@ -192,7 +184,7 @@ h4,
   color: var(--color-white-lighten);
 }
 
-.container {
+.layout-wide {
   max-width: 1110px;
   margin-right: auto;
   margin-left: auto;
@@ -200,7 +192,7 @@ h4,
   padding-left: 30px;
 }
 
-.position-relative {
+.relative {
   position: relative;
 }
 
@@ -233,7 +225,7 @@ h4,
 
 .btn-accent {
   color: var(--color-white);
-  background: var(--color-accent);
+  background: var(--color-orrange);
 }
 
 .text-center {
@@ -353,9 +345,6 @@ h4,
   margin-top: calc(var(--offset-base-point) * 20);
 }
 
-/* @@@ Parts END @@@ */
-
-/* @@@ Header-page START @@@ */
 .header-page-img {
   position: absolute;
   top: -45px;
@@ -363,10 +352,6 @@ h4,
   width: auto;
   height: 525px;
 }
-
-/* @@@ Header-page END @@@ */
-
-/* @@@ Section-main-nav START @@@ */
 
 .main-nav-counter-init {
   counter-reset: main-nav-counter;
@@ -399,7 +384,7 @@ h4,
 .main-nav-item:hover,
 .main-nav-item:focus {
   color: var(--color-white);
-  background-color: var(--color-accent);
+  background-color: var(--color-orrange);
 }
 
 .main-nav-item:active {
@@ -407,17 +392,13 @@ h4,
 }
 
 .main-nav-title {
-  color: var(--color-accent);
+  color: var(--color-orrange);
 }
 
 .main-nav-item:hover .main-nav-title,
 .main-nav-item:focus .main-nav-title {
   color: var(--color-white);
 }
-
-/* @@@ Section-nav END @@@ */
-
-/* @@@ Form START @@@ */
 
 .form-policy {
   margin: 0;
@@ -452,7 +433,7 @@ h4,
   width: 70px;
   height: 50px;
   padding: 0;
-  background-color: var(--color-accent);
+  background-color: var(--color-orrange);
   border: 0;
   border-radius: 0;
   cursor: pointer;
@@ -460,14 +441,14 @@ h4,
 }
 
 .form-send-btn::before {
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   width: 24px;
   height: 24px;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 2L11 13' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 2L15 22L11 13L2 9L22 2Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-image: url(../images/send.svg);
   transform: translate(-50%, -50%);
-  content: '';
 }
 
 .form-send-btn:hover,
